@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="main">
+      <div>
+        <h1 id="title">Most loved Game Genre</h1>
+      </div>
+      <div>
+        <p id="description">
+          Help us to know which one is the best game genre of 2021.
+        </p>
+      </div>
+      <div>
+        <form id="survey-form">
+          <div class="form-group">
+            <label for="Name" id="name-label">Name</label>
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              id="name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="Email" id="email-label">Email</label>
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              id="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="Number" id="number-label"
+              >How many genres you know?</label
+            >
+            <input
+              type="number"
+              placeholder="number of genres"
+              id="number"
+              min="0"
+              max="10"
+            />
+          </div>
+          <fieldset class="form-fieldset">
+            <legend class="text-form">How often do you play games?</legend>
+            <div>
+              <ul class="radio-group">
+                <li>
+                    <label for="1hr">
+                  <input type="radio" value="1" id="1hr" name="Timeplaying" checked />
+                  1 Hour at day</label>
+                </li>
+                <li>
+                  <input type="radio" value="2" id="2hr" name="Timeplaying" />
+                  <label for="2hr">2 Hours at day</label>
+                </li>
+                <li>
+                  <input type="radio" value="3" id="3hr" name="Timeplaying" />
+                  <label for="3hr">3 Hours at day</label>
+                </li>
+                <li>
+                  <input type="radio" value="4" id="4hr" name="Timeplaying" />
+                  <label for="4hr">4 Hours at day</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <label for="gamegenre" class="text-form"
+              >Which one is the game genre you like the most:</label
+            >
+            <select id="dropdown">
+              <option disabled selected value>Select the game genre</option>
+              <option value="RPG">Roleplay Game</option>
+              <option value="FPS">First Person Shooter</option>
+              <option value="Metroidvania">Metroidvania</option>
+              <option value="Roguetypes">Roguetypes</option>
+              <option value="Horror Games">Horror</option>
+              <option value="Survival">Survival</option>
+            </select>
+          </div>
+          <fieldset class="form-fieldset">
+            <legend class="text-form">Which other genre you like?</legend>
+            <div class="checkbox-group">
+              <input type="checkbox" id="RPG" value="RPG" name="othergenre" />
+              <label for="RPG">RPG</label>
+              <input type="checkbox" id="FPS" value="FPS" name="othergenre" />
+              <label for="FPS">FPS</label>
+              <input type="checkbox" id="Metroidvania" value="Metroidvania" name="othergenre" />
+              <label for="Metroidvania">Metroidvania</label>
+              <input type="checkbox" id="Roguetypes" value="Roguetypes" name="othergenre" />
+              <label for="Roguetypes">Roguetypes</label><br />
+              <input type="checkbox" id="Horror" value="Horror" name="othergenre" />
+              <label for="Horror" >Horror</label>
+              <input type="checkbox"id="Survival"value="Survival" name="othergenre" />
+              <label for="Survival">Survival</label>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <p class="text-form">Comments</p>
+            <textarea
+              placeholder="Write anything related about games genre that you like"
+            ></textarea>
+          </div>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

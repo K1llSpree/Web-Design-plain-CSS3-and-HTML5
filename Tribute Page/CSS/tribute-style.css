@@ -1,0 +1,101 @@
+body{
+    background: #9a8c98;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-items: center;
+}
+
+header{
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #22223b;
+    background-color: #4a4e69;
+}
+
+#title{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#img-caption{
+    text-align: center;
+    color:#f2e9e4;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    height: auto;
+    width: auto;
+}
+#img-caption2{
+    text-align: center;
+    color:#f2e9e4;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    height: auto;
+    width: auto;
+}
+#img-div{
+    margin-left: auto;
+    margin-right: auto;
+ 
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-items: center;
+}
+#image{
+    justify-items: center;
+    align-items: center;
+    border-style: solid;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 600px;
+
+}
+.tribute-stack{
+    align-items: center;
+    text-align: justify;
+}
+#tribute-info{
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: azure;
+    padding: 10px 10px 10px 10px;
+    color:#C9ADA7 ;
+    background-color: #4A4E69;
+}
+#tribute-link{
+    color:#22223b;
+    font-size: medium;
+    font-family: monospace, 'Courier New';
+    font-weight: bolder;
+}
+#tribute-link:hover{
+    color:black
+}
+
+a{
+    text-decoration: none;
+    color: #C9ADA7;
+}
+
+a:active, a:hover{
+    color: #c9ada7be 
+}
+@media (max-width: 600px) {
+    #image{
+        width: 50%;
+    }    
+}
+
+@media (max-width: 300px) {
+#tribute-info{
+width: max-content;
+}
+    
+}

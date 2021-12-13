@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows:auto;
+    grid-template-areas: 
+    "menus program program program program"
+    "menus program program program program"
+    "menus program program program program"
+    "menus program program program program";
+    font-family: monospace;
+    background-color: seashell;
+
+}
+#menu{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: max-content;
+    grid-area: menus;
+    width: 300px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-right: solid;
+    background-color: seashell;
+    
+}
+#menu ul{
+    list-style: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+#menu h2{
+    position: block;
+    margin: 10px auto;
+    text-align: center;
+    
+}
+#main-doc, footer{
+    position: relative;
+    grid-area: program;
+    text-align: center;
+}
+#main-doc section{
+    margin-left: 50px;
+    margin-top: 100px;
+    text-align: start;
+}
+#menu li{
+    position: relative;
+    padding: 9px 0px;
+    display: block;
+    margin: auto;
+    color: black;
+    font-size: 12px;
+}
+#menu li a{
+    color:black;
+}
+
+#menu header{
+    margin-top: 40%;
+}
+#menu a{
+
+    margin: auto;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    border-bottom: solid ;
+    border-width: thin;
+    border-color: black;
+    cursor: pointer;
+}   
+#navbar{
+    margin-top: 50%;
+}
+footer{
+    background-color: black;
+    z-index: -1;
+    color: wheat;
+}
+.nav-link:hover{
+    color:gray;
+    font-size: calc(100%*1.25);
+}
+#main-title{
+    position: relative;
+    bottom: 100px;
+}
+code{
+    font-weight: bold;
+    color: cornsilk;
+}
+.codesdiv{
+    background-color: rgb(136, 135, 135);
+    margin-left: 6vw;
+    margin-right: 10vw;
+    border-radius: 9px;
+    margin-top: 10px;
+}
+.codes{
+    margin-left: 10px;
+    margin-top: 10px;
+    z-index: 99;
+}
+
+#datatable{
+ margin: 100px auto;
+ border: 1px solid black;
+ color: black;
+ width: 1000px;
+ height: 500px;
+}
+#datatable code{
+    color: black;
+    font-weight: lighter;   
+}
+table, th, td{
+    border: 1px thin black;
+}
+table td{
+    margin:5px;
+    padding:0px;
+    text-align: center;
+}
+table tr:nth-child(odd){
+    background-color: cadetblue;
+}
+table tr:nth-child(even){
+    background-color: rgb(141, 212, 214);
+}
+header{
+    font-size:33px;
+    font-weight: bolder;
+    width: 100%;
+}
+section header{
+    font-size: 35px;
+    font-weight:bolder;
+    width: 100%;
+    margin-bottom: 30px;
+}
+#references{
+    margin-bottom: 10%;
+}
+section p{
+    margin: 10px auto;
+    width: 90%;
+    text-align: justify;
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+
+    #menu{
+        width: 20vw;
+    }   
+    #main-title{
+        font-size: 3vw;
+        bottom: 70px;
+    }
+}

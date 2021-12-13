@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Programming page</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="menu">
+            <nav id="navbar">
+                <header id="main-title">
+                    C# Documentation
+                </header>
+                <li><a class="nav-link" href="#Introduction">Introduction</a> </li>
+                <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+                <li><a class="nav-link" href="#Types_of_Data_in_C#">Datatypes</a> </li>
+                <li><a class="nav-link" href="#Expressing_Number_in_C#">Number Expression</a> </li>
+                <li><a class="nav-link" href="#Definition_of_Classes_in_C#">Class definition</a> </li>
+                <li><a class="nav-link" href="#First_Compilation">First Compilation</a> </li>
+                <li><a class="nav-link" href="#References">References</a> </li>
+            </nav>
+
+        </div>
+
+        <main id="main-doc">
+            <h1>Programming With C#</h1>
+                <section class="main-section" id="Introduction">
+
+                    <header>Introduction</header>
+
+                    <li><p> C# (pronounced "C-sharp") is an object-oriented programming language from Microsoft that aims to
+                        combine the computing power of C++ with the programming ease of Visual Basic. C# is based on C++
+                        and contains features similar to those of Java.</p></li>
+
+                    <li><p>C# is designed to work with Microsoft's .NET platform. Microsoft's aim is to facilitate the
+                        exchange of information and services over the Web, and to enable developers to build highly
+                        portable applications. C# simplifies programming through its use of Extensible Markup Language
+                        (XML) and Simple Object Access Protocol (SOAP) which allow access to a programming object or
+                        method without requiring the programmer to write additional code for each step. Because
+                        programmers can build on existing code, rather than repeatedly duplicating it, C# is expected to
+                        make it faster and less expensive to get new products and services to market.</p></li>
+
+                </section>
+
+                <section class="main-section" id="Hello_World">
+
+                    <header>Hello World</header>
+                    <p> The first thing we want to know is how to write the first most common command in the world.
+                        The Hello World, in this case we want to use the command that is write for telling the machine
+                        that
+                        it has to present the data inside the quotation mark.</p>
+                    <div class="codesdiv">
+                        <code class="codes">
+                            using System;<br>
+
+                            &nbsp; namespace ConsoleApp1
+                            {<br>
+                            &nbsp;&nbsp;&nbsp;class Program
+                            {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;static void Main(string[] args)
+                            {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine("Hello World!");
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;}
+                            <br>&nbsp;&nbsp;&nbsp;}
+                            <br>&nbsp;}
+
+                        </code>
+
+                    </div>
+                    <li><p>In the code located above, we can see some elements that are new for us, the first thing is the
+                        <strong>Console WriteLine(""); that provides the console the ability of making the console to
+                            write the elements between the quotation mark.</strong></p></li>
+
+                </section>
+
+                <section class="main-section" id="Types_of_Data_in_C#">
+                    <header>Types of Data in C#</header>
+                    <li><p>C# programming language provides some types of data that can be use in the program schedule, in
+                        this case, the most common ones are:</p></li>
+                    <div>
+                        <table id="datatable">
+                            <tr>
+                                <th>Data type</th>
+                                <th>Meaning</th>
+                                <th>Expression</th>
+                            </tr>
+
+                            <tr id="tr1">
+                                <td>Integer</td>
+                                <td>Every digit that is between -2147483648 and 2147483648.</td>
+                                <td><code> int a = 18;</code></td>
+                            </tr>
+                            <tr>
+                                <td>Double</td>
+                                <td>Every digit in the world that has decimal.</td>
+                                <td><code> double a = 18.28</code></td>
+                            </tr>
+                            <tr id="tr3">
+                                <td>String</td>
+                                <td>Chain of characters with the possibility of have numbers between the chain.</td>
+                                <td><code>string str= "Hello World";</code></td>
+                            </tr>
+                            <tr>
+                                <td>Boolean</td>
+                                <td>Part of the logic that only has to possibles results: true or false.</td>
+                                <td><code>bool choice= false;</code></td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+                    <li><p>Therefore types of data like Long integer, Long double are use in those cases when the chain of
+                        digits is longer than the normal integer or double. </p></li>
+
+                </section>
+
+                <section class="main-section" id="Expressing_Number_in_C#">
+                    <header>
+                        Expressing Number in C#
+                    </header>
+                    <p>Numbers in C# can be expresses through variables using them as a container or pointers to make,
+                        to make this possible, the programmer has to make the initialization and also the definition of
+                        the variable with the integer or the double inside.</p>
+                    <div class="codesdiv">
+                        <code class="codes">
+                            using System;<br>
+
+                            &nbsp; namespace ConsoleApp1
+                            {<br>
+                            &nbsp;&nbsp;&nbsp;class Program
+                            {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;static void Main(string[] args)
+                            {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; int a = 18;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; int b = 6;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; int d = a + b;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(d);
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;}
+                            <br>&nbsp;&nbsp;&nbsp;}
+                            <br>&nbsp;}
+
+                        </code>
+                    </div>
+                    <p>As we see in the example, the numbers are located inside the variables with the name b and a, and there's also an operation with those variables that has a pointer in the d variable.</p>
+
+                </section>
+
+                <section class="main-section" id="Definition_of_Classes_in_C#">
+                    <header>
+                        Definition of Classes in C#
+                    </header>
+                    <p>The classes in C# are defined by the key word Class behind the name of the class, it has to be with curly braces after the name of the class because there's a domain scope in each of them.</p>
+                    <div class="codesdiv">
+                        <code>
+                            using System;<br>
+                            &nbsp; namespace ConsoleApp1
+                            {<br>
+                            &nbsp;&nbsp;&nbsp;class Program
+                            {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;static void Main(string[] args)
+                            {<br>
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;}
+                            <br>&nbsp;&nbsp;&nbsp;}
+                            <br>&nbsp;}
+                        </code></div>
+                    <p>The class can be abstract class, partial class or a normal class.</p>
+
+                </section>
+
+                <section class="main-section" id="First_Compilation">
+                    <header>
+                        First Compilation
+                    </header>
+                    <p>At the first compilation of the program, C# produces some processes like reviewing all the code
+                        for security and code logic purposes.</p>
+                    <div class="codesdiv">
+                        <code>
+                            using System;<br>
+                            &nbsp; namespace ConsoleApp1
+                            {<br>
+                            &nbsp;&nbsp;&nbsp;class Program
+                            {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;static void Main(string[] args)
+                            {<br>
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;}
+                            <br>&nbsp;&nbsp;&nbsp;}
+                            <br>&nbsp;}
+                        </code></div>
+                    <p>In the example presented before, there are two classes, one that we have made and the other that
+                        is default in the program. The Class Program.</p>
+                </section>
+                <section class="main-section" id="References">
+                    <header>
+                        References
+                    </header>
+                    <p>For better understanding of the C# language here's the <a
+                            href="https://whatis.techtarget.com/definition/C-Sharp">link</a></p>
+                    <p>Also be aware that the best way to learn a language is reading the direct documentation and
+                        making some projects, in this case, here's a <a
+                            href="https://docs.microsoft.com/en-us/dotnet/csharp/">link</a> </p>
+                    <br>
+                </section>
+
+        </main>
+
+    </div>
+    <footer>
+        <p>&copy;Copyright reserved to dotekill studios.</p>
+    </footer>
+</body>
+
+</html>
